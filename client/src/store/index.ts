@@ -6,4 +6,5 @@ import { serversReducer } from "./reducers/serversReducer/index"
 const rootReducer = combineReducers({
     serversReducer
 });
+
 export const store = createStore(rootReducer, applyMiddleware(thunk))

@@ -14,7 +14,7 @@ export interface IServer {
   company_name: string
 }
 const initialState = {
-  servers:[],
+  servers: [],
 };
 
 
@@ -25,6 +25,16 @@ export const serversReducer = (
   switch (action.type) {
     case ACTIONS.SERVERS.GET_ALL: {
       return { ...state, servers: action.payload };
+    }
+    case ACTIONS.SERVERS.FILTER.DATE: {
+      let filteredServers = state.servers.sort(function (a, b) {
+        return Date.parse(a?.server_created_at) - Date.parse(b?.server_created_at);
+      })
+      return { ...state, servers: filteredServers };
+    }
+    case ACTIONS.SERVERS.FILTER.ACTIVE: {
+      let filteredServers = state.servers.filter((server: IServer) => server.server_status === 1)
+      return { ...state, servers: filteredServers };
     }
     default:
       return state;

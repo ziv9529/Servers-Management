@@ -30,11 +30,3 @@ export async function changeServerAction(serverId:any) {
         console.log("getAllServersAction error " + error);
     }
 }
-export async function filterServersByDate(serverId:any) {
-    const dispatch = getDispatchStore();
-    try {
-        // const result = await changeServerStatusService(serverId);
-    } catch (error) {
-        console.log("getAllServersAction error " + error);
-    }
-}
