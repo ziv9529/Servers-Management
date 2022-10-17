@@ -14,7 +14,6 @@ For example you can:
 * React
 * Node-JS
 * MySQL
-* Rest APi
 
 ## Getting Started
 
