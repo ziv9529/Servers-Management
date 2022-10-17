@@ -6,28 +6,66 @@ For example you can:
 * see all the active servers
 * filter by the server creation date
 
-## Built With:
+## Images
+
+<img src="./client/public/servers_1.png">
+
+## Technologies I used:
 * React
 * Node-JS
 * MySQL
+* Rest APi
 
 ## Getting Started
+
+### Installing
+
+git clone my reposetory to your local folder.
+
+### Executing program
+
 * Docker:
-in the Dev-Apps file run the command: 
-  ```sh
+open new terminal and run the following commands: 
+  ```
+  cd dev-apps
   docker compose up
   ```
 * npm:
   make sure to install node modules in each client and server folders
-  ```sh
+  ```
+  cd client
+  npm install 
+  ```
+  ```
+  cd server
   npm install 
   ```
 * starting the project:  
-  * in the server-side run the command
-    ```sh
+  * open new terminal and run the following commands: 
+    ```
+    cd server
     npm run all-slim
     ```
-  * in the client-side run the command
-    ```sh
+  * open another terminal and run the following commands: 
+    ```
+    cd client
     npm start
     ```
+
+## Help
+
+If you running into a docker problem, check if the port 3306 of MySQL is available.
+```
+cd dev-apps
+docker compose down 
+```
+after you make sure the port is available, run the following command in the dev-apps folder: 
+```
+cd dev-apps
+docker compose up 
+```
+
+## Authors
+
+Ziv Ashkenazi 
+[@Linkdin](https://www.linkedin.com/in/ziv-ashkenazi/)

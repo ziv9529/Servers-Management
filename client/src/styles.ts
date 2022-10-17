@@ -15,6 +15,7 @@ export const StyledTypography = styled(Typography)({
     border: '1px solid black',
     width: 'max-content',
     paddingLeft: '10px',
-    margin: '10px 0'
+    margin: '5px 15px 25px 0',
+    display: 'inline-block',
 });
 
